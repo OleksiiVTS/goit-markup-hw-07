@@ -41,56 +41,6 @@
           <h1 class="hero-text">Effective Solutions<br />for Your Business</h1>
           <button data-modal-open class="hero-button" type="button" aria-label="Order Service">Order Service</button>
         </div>
-      <!--modal-windpws-->  
-        <div data-modal class="bakdrop is-hidden">
-          <div class="window">
-            <button data-modal-close type="button" class="button-clouse">
-              <svg width="8px" height="8px">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
-            </button>
-            <h2 class="window-h">Leave your contacts and we will call you back</h2>
-            <form class="window-form" name="form-order">
-              <label class="windows-label">
-                <span class="form-description">Name</span>
-                <input autofocus class="form-input" type="text" name="name"
-                    required placeholder=" ">
-                    <svg class="form-icon " width="12px" height="12px">
-                      <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
-              </label>
-              <label class="windows-label">
-                <span class="form-description">Phone</span>
-                <input class="form-input" type="tel" name="phone_namber"
-                    required placeholder=" " pattern="^[+][0-9]+$" 
-                    title="Enter the number using &#34+&#34 and numbers">
-                    <svg class="form-icon " width="13px" height="13px">
-                      <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-              </label>
-              <label class="windows-label">
-                <span class="form-description">Email</span>
-                <input class="form-input" type="email" name="email"
-                    required placeholder=" ">
-                    <svg class="form-icon" width="16px" height="12px">
-                      <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-              </label>
-              <label class="windows-label">
-                <span class="form-description">Comment</span>
-                <textarea class="form-textarea" name="comment" rows="5" placeholder="Text input"></textarea>
-              </label>
-              <label class="flex privacy-polisy">
-                <input class="checkbox-input" type="checkbox" name="privacy-polisy" value="privacy-polisy-yes" required>
-                <span class="windows-checkbox"></span>
-                <span class="polisy-text">I accept the terms and conditions of the <a class="polisy-link" href="/">Privacy Policy</a></span>
-              </label>
-              <button class="button-form" type="submit">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
       </section>
       <!--skills-->
       <section class="section skills">
@@ -426,10 +376,10 @@
           <h3 class="footer-h">Subscribe</h3>
             <form class="form-flex" name="subscribe">
               <label>
-                <input class="footer-form" type="email" name="email" placeholder="E-mail">
+                <input class="footer-form" type="email" name="email" placeholder="E-mail" required>
               </label>
             
-              <button class="button-subscribe" type="submit">
+              <button class="button-subscribe" type="submit" aria-label="button subscribe">
                 Subscribe
                 <svg class="team-icon" width="24px" height="20px">
                   <use href="./images/icons.svg#icon-telegram"></use>
@@ -440,6 +390,69 @@
         </li>
       </ul>
     </footer>
+<!--modal-windpws-hero-->  
+    <div data-modal class="bakdrop is-hidden">
+      <div class="window">
+        <button data-modal-close type="button" class="button-clouse" aria-label="button close">
+          <svg width="8px" height="8px">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="window-h">Leave your contacts and we will call you back</h2>
+        <form class="window-form" name="form-order">
+          <label class="windows-label">
+            <span class="form-description">Name</span>
+            <input autofocus class="form-input" type="text" name="name"
+                required placeholder=" ">
+                <svg class="form-icon " width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+          </label>
+          <label class="windows-label">
+            <span class="form-description">Phone</span>
+            <input class="form-input" type="tel" name="phone_namber"
+                required placeholder=" " pattern="^[+][0-9]+$" 
+                title="Enter the number using &#34+&#34 and numbers">
+                <svg class="form-icon " width="13px" height="13px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+          </label>
+          <label class="windows-label">
+            <span class="form-description">Email</span>
+            <input class="form-input" type="email" name="email"
+                required placeholder=" ">
+                <svg class="form-icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+          </label>
+          <label class="windows-label">
+            <span class="form-description">Comment</span>
+            <textarea class="form-textarea" name="comment" rows="5" placeholder="Text input"></textarea>
+          </label>
+          <label class="flex privacy-polisy">
+            <input class="checkbox-input" type="checkbox" name="privacy-polisy" value="privacy-polisy-yes" required>
+            <span class="windows-checkbox"></span>
+            <span class="polisy-text">I accept the terms and conditions of the <a class="polisy-link" href="/">Privacy Policy</a></span>
+          </label>
+          <button class="button-form" type="submit" aria-label="button sabmit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+<!--modal-windpws-mobile-->  
+<div data-modal class="">
+  <div class="window">
+    <button data-modal-close type="button" class="button-clouse">
+      <svg width="8px" height="8px">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    
+    
+  </div>
+</div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
