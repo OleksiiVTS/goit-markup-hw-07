@@ -983,8 +983,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
-    padding-right: 108px;
-    padding-left: 108px;
   }
   .nav {
     display: flex;
@@ -1022,6 +1020,9 @@ img {
 /* customers *//* customers *//* customers */
   .container-flex {
     max-width: 552px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
   /* footer *//* footer *//* footer *//* footer */
   .footer-flex {
@@ -1052,8 +1053,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     min-width: 1128px;
-    padding-right: 12px;
-    padding-left: 12px;
   }
   .kontakt {
     display: inline-flex;
