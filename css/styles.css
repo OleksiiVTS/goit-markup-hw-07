@@ -444,6 +444,7 @@ img {
   gap: 24px;
 }
 .skills-li {
+  margin: 0 auto;
   max-width: 396px;
 }
 .skills-li:not(:last-child) {
@@ -1100,6 +1101,10 @@ color: var(--color-text);
   }
   .skills-li:not(:last-child) {
     margin-bottom: 0;
+  }
+  .skills-h {
+    display: inline-block;
+    margin-left: auto;
   }
 /* team *//* team *//* team *//* team */
   .team-li {
