@@ -32,13 +32,14 @@
             <a class="kontakt-m" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
-        <button class="header-menu" type="button" aria-label="menu">
+        <button class="header-menu js-open-menu" type="button" aria-label="menu">
             <svg class="icons-menu">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
         </button>
       </div>
     </header>
+    <!--main-->
     <main>
       <!--hero-->
       <section class="hero">
@@ -417,7 +418,7 @@
             <span class="form-description">Phone</span>
             <input class="form-input" type="tel" name="phone_namber"
                 required placeholder=" " pattern="^[+][0-9]+$" 
-                title="Enter the number using &#34+&#34 and numbers">
+                title="Enter the number using &#34&#43;&#34 and numbers">
                 <svg class="form-icon " width="13px" height="13px">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -446,16 +447,59 @@
       </div>
     </div>
 <!--modal-windpws-mobile-->  
-<div data-modal class="">
-  <div class="window">
-    <button data-modal-close type="button" class="button-clouse">
+<div class="menu js-menu-container">
+  <div>
+    <button type="button" class="button-clouse clouse-menu js-close-menu">
       <svg width="8px" height="8px">
         <use href="./images/icons.svg#close"></use>
       </svg>
     </button>
-    
-    
-  </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a class="nav-link-menu" href="./index.html">Studio</a></li>
+        <li><a class="nav-link-menu" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="nav-link-menu" href="/">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <ul class="kontakt-menu">
+      <li><a class="kontakt-menu-a" href="tel:+110001111111">+11 (000) 111-11-11</a>
+      </li>
+      <li><a class="kontakt-menu-a" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <ul class="flex-icon-menu">
+      <li>
+        <a href="/" class="team-button">
+          <svg class="team-icon" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="/" class="team-button">
+          <svg class="team-icon" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="/" class="team-button">
+          <svg class="team-icon" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="/" class="team-button">
+          <svg  class="team-icon" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>   
 </div>
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>

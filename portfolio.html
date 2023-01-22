@@ -13,25 +13,31 @@
 
 </head>
 <body>
+    <!--header-->
     <header class="header">
-        <div class="container flex">
-            <a class="logo" href="./index.html"><span class="logo-w">WEB</span><span class="logo-s">STUDIO</span></a>
-            <nav>
-                <ul class="nav">
-                    <li><a class="nav-link" href="./index.html">Studio</a></li>
-                    <li><a class="nav-link current" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-link" href="/">Contacts</a></li>
-                </ul>
-            </nav>
-            <ul class="kontakt">
-                <li class="kontakt-flex">
-                    <a class="kontakt-t" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-                <li class="kontakt-flex">
-                    <a class="kontakt-m" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container flex">
+        <a class="logo" href="./index.html"><span class="logo-w">WEB</span><span class="logo-s">STUDIO</span></a>
+        <nav>
+          <ul class="nav">
+            <li><a class="nav-link" href="./index.html">Studio</a></li>
+            <li><a class="nav-link current" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="/">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="kontakt">
+          <li class="kontakt-flex">
+            <a class="kontakt-t" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="kontakt-flex">
+            <a class="kontakt-m" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <button class="header-menu js-open-menu" type="button" aria-label="menu">
+            <svg class="icons-menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+      </div>
     </header>
     <main>
         <section class="portfolio-section">
@@ -120,7 +126,6 @@
                             <h3>Online Courses</h3>
                             <p class="projekts-section-p-under">Marketing</p>
                         </div>
-
                     </li>
                     <li class="projekts-section-bloc">
                       <div class="overlay-container">
@@ -162,8 +167,10 @@
             </div>
         </section>
     </main>
+    <!--footer-->
     <footer class="footer">
-      <ul class="container footer-flex">
+      <div class="container crutch">
+      <ul class="footer-flex">
         <li class="footer-container">
           <a class="logo-footer" href="./index.html"><span class="logo-w-footer">WEB</span><span class="logo-s-footer">STUDIO</span></a>
           <p class="footer-p">
@@ -209,17 +216,74 @@
           <h3 class="footer-h">Subscribe</h3>
             <form class="form-flex" name="subscribe">
               <label>
-                <input class="footer-form" type="email" name="email" placeholder="E-mail">
+                <input class="footer-form" type="email" name="email" placeholder="E-mail" required>
               </label>
-              <button class="button-subscribe" type="submit">
+              <button class="button-subscribe" type="submit" aria-label="button subscribe">
                 Subscribe
                 <svg class="team-icon" width="24px" height="20px">
                   <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
               </button>
-
             </form>
         </li>
       </ul>
+      </div>
     </footer>
+    <!--modal-windpws-mobile-->  
+    <div class="menu js-menu-container">
+      <div>
+        <button type="button" class="button-clouse clouse-menu js-close-menu">
+          <svg width="8px" height="8px">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="nav-menu">
+            <li><a class="nav-link-menu" href="./index.html">Studio</a></li>
+            <li><a class="nav-link-menu" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link-menu" href="/">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="kontakt-menu">
+          <li><a class="kontakt-menu-a" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li><a class="kontakt-menu-a" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="flex-icon-menu">
+          <li>
+            <a href="/" class="team-button">
+              <svg class="team-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="team-button">
+              <svg class="team-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="team-button">
+              <svg class="team-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="team-button">
+              <svg  class="team-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>   
+    </div>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
+</html>
