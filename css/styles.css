@@ -42,6 +42,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* приховати код */
@@ -211,7 +213,8 @@ img {
 }
 .header-menu:hover,
 .header-menu:focus,
-.header-menu:active {
+.header-menu:active
+ {
   fill: var(--color-hader);
   outline: none;
 }
