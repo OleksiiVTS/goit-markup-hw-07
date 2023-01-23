@@ -206,6 +206,7 @@ img {
 }
 .icons-menu {
   display: block;
+  outline: none;
 }
 /* decor */
 .flex {
