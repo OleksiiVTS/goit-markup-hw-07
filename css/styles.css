@@ -192,7 +192,7 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  outline: none;
+  
   padding: 0;
   border: none;
   background-color: transparent;
@@ -201,12 +201,14 @@ img {
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.header-menu:hover {
+.header-menu:hover,
+.header-menu:focus,
+.header-menu:active {
   fill: var(--color-hader);
+  outline: none;
 }
 .icons-menu {
   display: block;
-  outline: none;
 }
 /* decor */
 .flex {
