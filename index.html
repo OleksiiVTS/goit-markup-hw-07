@@ -32,7 +32,8 @@
             <a class="kontakt-m" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
-        <button class="header-menu js-open-menu" type="button" aria-label="menu">
+        <button class="header-menu js-open-menu" 
+                aria-label="menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icons-menu">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -447,7 +448,7 @@
       </div>
     </div>
 <!--modal-windpws-mobile-->  
-<div class="menu js-menu-container">
+<div class="menu js-menu-container" id="mobile-menu">
   <div>
     <button type="button" class="button-clouse clouse-menu js-close-menu">
       <svg width="8px" height="8px">
