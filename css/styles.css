@@ -98,9 +98,6 @@ img {
 .logo:active {
   outline: none;
 }
-
-
-
 .logo-w {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -192,8 +189,6 @@ img {
 .kontakt-t:focus, .kontakt-m:focus {
     color: var(--color-hader);
 }
-
-
 .header-menu {
   width: 30px;
   height: 19px;
@@ -394,8 +389,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px 600px;
-
   text-align: center;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, 
+                  rgba(46, 47, 66, 0.7), 
+                  rgba(46, 47, 66, 0.7 )),
+                  url("../images/hero-back-x2.jpg");
+  }
 }
 /* hero */
 /* fonts */
@@ -406,11 +411,9 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-
   /* font-weight: 500;
   font-size: 56px;
   line-height: 1; */
-
   letter-spacing: 0.02em;
   color: var(--color-text-light);
 }
