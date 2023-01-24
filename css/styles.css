@@ -239,7 +239,7 @@ img {
 }
 .footer-flex {
   /* display: flex; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-align: center;
 }
 .footer-container:not(:last-child) {
@@ -300,6 +300,10 @@ img {
 }
 /* footer */
 /* icons */
+.footer-flex-icon {
+  display: inline-flex;
+  gap: 16px;
+}
 .footer-button {
   transition-property: background-color;
   transition-duration: 200ms;
@@ -378,8 +382,8 @@ img {
 /* decor */
 .hero {
   position: relative;
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: #2e2f42;
   
   background-image: linear-gradient(to top, 
@@ -1014,10 +1018,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   position: fixed;
-  display: flex;
+  display: block;
   /* align-items: center; */
   justify-content: center;
-  padding-top: 40px;
   width: 100%;
   height: 100%;
   
@@ -1034,14 +1037,15 @@ img {
   transform: translateX(0);
   opacity: 1;
 }
+.menu-container {
+  padding: 40px;
+  height: 796px;
+  max-height: 100%;
+}
 .clouse-menu {
   margin-bottom: 16px;
 }
-
-.nav-menu {
-  margin-bottom: 284px;
-}
-.nav-menu > li:not(:last-child) {
+.nav-menu > li {
   margin-bottom: 40px;  
 }
 .nav-link-menu {
@@ -1082,10 +1086,16 @@ color: var(--color-text);
   
   color: var(--color-hader);
 }
+.test {
+	display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 .flex-icon-menu {
+  vertical-align: bottom;
   display: flex;
   gap: 56px;
-  margin-bottom: 40px;
 }
 
 /*  *//*  *//*  *//*  *//*  *//*  *//* MOBAIL *//*  *//*  *//*  *//*  *//*  */
@@ -1106,6 +1116,10 @@ color: var(--color-text);
     margin-top: 33px;
   }
 /* hero *//* hero *//* hero *//* hero */
+  .hero {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  }
   .hero-text {
   font-weight: 500;
   font-size: 56px;
@@ -1146,6 +1160,7 @@ color: var(--color-text);
 /* footer *//* footer *//* footer *//* footer */
   .footer-flex {
     display: flex;
+    /* justify-content: center; */
     flex-wrap: wrap;
     column-gap: 24px;
     max-width: 552px;
@@ -1161,7 +1176,7 @@ color: var(--color-text);
   }
   .footer-form {
     width: 264px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
   }
   .crutch {
     display: flex;
@@ -1234,6 +1249,9 @@ color: var(--color-text);
   flex-wrap: nowrap;
   gap: 80px; 
   max-width: 100%;
+  }
+  .footer-container:not(:last-child) {
+    margin-bottom: 0;
   }
   /* Filter *//* Filter *//* Filter *//* Filter */
   .projekts-section-bloc {
